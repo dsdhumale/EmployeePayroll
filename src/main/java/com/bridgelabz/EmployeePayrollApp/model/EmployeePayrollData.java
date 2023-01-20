@@ -17,12 +17,11 @@ public class EmployeePayrollData {
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int employee_id;
     private String name;
     private long salary;
     private String profilePic;
     private String gender;
-    // private String department;
     private String notes;
     private LocalDate startDate;
     @ElementCollection
@@ -39,8 +38,5 @@ public class EmployeePayrollData {
         this.startDate = startDate;
         this.departments = departments;
     }
-
-    
-    
 
 }
